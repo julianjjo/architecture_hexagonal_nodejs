@@ -12,5 +12,5 @@ BookRepositorySQLite.prototype.getName = async function(id_book) {
   return await book.dataValues.name;
 };
 
-book_repository_sqlite = new BookRepositorySQLite();
-module.exports.book_repository = book_repository_sqlite;
+book_repository = new BookRepositorySQLite();
+module.exports = book_repository;
